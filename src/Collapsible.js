@@ -5,9 +5,11 @@ import './Collapsible.css'
 function Collapsible({ label, children }) {
   const [isOpen, setIsOpen] = useState(false)
 
+  //   This would immediately get the element with id parent and then the return statement would run, so div doesn't exist yet.
+  //   const scrollHeight = document.getElementById("parent").scrollHeight;
+
   const parentRef = useRef()
 
-  if (parentRef.current) console.log(parentRef.current.scrollHeight)
   return (
     <div className='collapsible'>
       <Button
