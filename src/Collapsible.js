@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useRef } from 'react'
 import { Button } from '@material-ui/core'
 import './Collapsible.css'
+
 function Collapsible({ label, children }) {
   const [isOpen, setIsOpen] = useState(false)
 
